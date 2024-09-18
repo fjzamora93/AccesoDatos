@@ -16,7 +16,6 @@ public class Entrada {
         System.out.println(ficheroSinPuntero.getParent());
         System.out.println(ficheroSinPuntero.length());
         System.out.println(ficheroSinPuntero.exists());
-
         System.out.println("Es un archivo o un directorio: " + ficheroSinPuntero.isDirectory());
 
         // File[] -> todos los FICHEROS que estan dentro del directorio
@@ -52,7 +51,6 @@ public class Entrada {
             } catch (IOException e){
                 System.out.println("Fallo en la creacion del fichero");
             }
-
         } else {
             System.out.println("El fichero.txt ya existe \n");
         }
@@ -68,16 +66,10 @@ public class Entrada {
            }
        }
 
-
-
         // 3 -> Listar el nombre de todos los ficheros del SISTEMA ( C:/User o /Users )
-
-
         // RECURSIVIDAD
         File system = new File("C:/Users/Javier");
         listadoRecursivo(system);
-
-
     }
 
     public static void listadoRecursivo(File directorio) {
